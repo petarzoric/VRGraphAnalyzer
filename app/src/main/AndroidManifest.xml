@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.petarzoric.vr_feedback">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.ParticipantActivities.ParticipantOverviewActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light"
+            />
+        <activity
+            android:name=".Activities.EditorActivities.AddStudyActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_add_studie"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Activities.EditorActivities.UpdateStudyActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_update_studie"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Activities.EditorActivities.EditorOverviewActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_editor_bereich"
+            android:theme="@style/Theme.AppCompat">
+            >
+        </activity>
+        <activity
+            android:name=".Activities.ParticipantActivities.StudyDetailViewActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_studien_detail_view"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activities.ParticipantActivities.SketchActivity.SketchActivity"
+            android:label="@string/title_activity_sketch"
+
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activities.EditorActivities.EventsActivity"
+            android:label="@string/title_activity_events"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat"></activity>
+    </application>
+
+</manifest>

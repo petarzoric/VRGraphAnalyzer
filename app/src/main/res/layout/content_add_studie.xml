@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activities.EditorActivities.AddStudyActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:background="@drawable/customborder"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Specify names:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutConstDelta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+                        android:gravity="end"
+                        android:text="study name"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/studienName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:hint="name of your study"
+                        android:selectAllOnFocus="false"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutConstMinLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutConstDelta">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="end"
+                        android:text="creator name"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/studienErsteller"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:hint="your name"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/customborder"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Set the duration: (refers to the VR content, not the entire study)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/minutesPickerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="minutes"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+
+                    <NumberPicker
+                        android:id="@+id/minutesPicker"
+                        android:layout_width="wrap_content"
+                        android:solidColor="@color/white"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_gravity="center_vertical"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_gravity="left"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <NumberPicker
+                        android:id="@+id/secondsPicker"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="wrap_content"
+                        android:solidColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <TextView
+                        android:id="@+id/secondsPickerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:text="seconds"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:background="@drawable/customborder"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/specifynames"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="Specify description:"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <EditText
+                android:layout_below="@id/specifynames"
+                android:background="@drawable/customborder"
+                android:lines="5"
+                android:id="@+id/descriptionEditText"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/customborder"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/specifyImage"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="Set image:"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/studyImageView"
+                    android:background="@drawable/customborder"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/noimagavailable"
+                    app:layout_aspectRatio="100%"
+                    app:layout_heightPercent="90%" />
+
+                <Button
+                    android:id="@+id/changeImageButton"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/studyImageView"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"
+                    android:layout_width="220dp"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/rectbutton"
+                    android:layout_height="wrap_content"
+                    android:text="change image" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/addNewStudieButton"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+
+            android:layout_width="350dp"
+            android:background="@drawable/rectbutton"
+            android:layout_height="wrap_content"
+            android:text="Add study" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+

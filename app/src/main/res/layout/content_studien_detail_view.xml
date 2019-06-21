@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ParticipantActivities.StudyDetailViewActivity"
+    tools:showIn="@layout/activity_studien_detail_view">
+
+
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/customborder"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_weight="0.2"
+            android:id="@+id/aktuelleTeilnehmeTextVIew"
+            android:layout_height="0dp">
+            <TextView
+                android:textSize="35sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Participants"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/addUserButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/whitebutton" />
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/aktuelleTeilnehmeTextVIew"
+            android:id="@+id/recyclerView_detailStudy"
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/customborder"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_weight="0.5"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:id="@+id/descriptionText"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Description"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/descriptionText"
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="@color/white"
+
+                    android:background="@drawable/customborder"
+                    android:lines="5"
+                    android:id="@+id/descriptionEditText"
+                    android:textSize="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VR_Feedback</string>
+    <string name="title_activity_editor_bereich">EditorBereichActivity</string>
+    <string name="title_activity_add_studie">AddStudieActivity</string>
+    <string name="title_activity_update_studie">UpdateStudieActivity</string>
+    <string name="title_activity_studien_detail_view">StudienDetailView</string>
+    <string name="title_activity_sketch">sketchActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="sketch_information"> Draw your feeling of being surrounded by, involved into the
+        actions in and plausibilty of the previous experience.
+        \nThe X-axis represents time, while the Y-axis represents the feeling mentioned above.
+    </string>
+
+    <string name="comment_on_sketch_info">
+        Your sketch has been analyzed.
+        Please tap on the markings to comment on the phases (not mendatory).
+        \nTap on the SUBMIT button, when you are finished.
+
+    </string>
+</resources>
