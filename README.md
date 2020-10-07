@@ -18,7 +18,7 @@ You can also change the analysis paramters:
 In the participant mode you can choose a study and participate:
 ![Alt text](/images/addParticipant.gif?raw=true "add participant")
 
-Now you can draw the presence graph. Made a mistake? The "Clear Canvas"-Button will delete your graph and you can draw a new one. 
+Now you can draw the presence graph.
 ![Alt text](/images/drawGraph.gif?raw=true "add participant")
 
 After sumbitting your graph, the app analyses it. Now you can add comments by clicking on marked areas of the graoh.
