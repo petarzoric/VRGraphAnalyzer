@@ -18,11 +18,10 @@ You can also change the analysis paramters:
 In the participant mode you can choose a study and participate:
 ![Alt text](/images/addParticipant.gif?raw=true "add participant")
 
-Now you can draw the presence graph.
-![Alt text](/images/drawGraph.gif?raw=true "add participant")
+![Alt text](/images/drawGraph.gif?raw=true "draw graph")
 
 After sumbitting your graph, the app analyses it. Now you can add comments by clicking on marked areas of the graoh.
-![Alt text](/images/commentGraph.gif?raw=true "add participant")
+![Alt text](/images/commentGraph.gif?raw=true "make comments")
 
 
 
